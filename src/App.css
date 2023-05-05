@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-primary: #00bcd4;
+  --color-backgrnd: #161a2b;
+  --color-tertiary: #f0f0f0;
+  --color-primary-txt: #f0f0f0;
+  --color-tertiary-dark: #f0f0f0;
+  --color-border: #5d0cff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 2rem auto;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+body {
+  font-family: "Nunito Sans", "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    background: linear-gradient(90deg, rgba(48, 16, 255, 1) 0%,
+    rgba(100, 115, 255, 1) 100%);
+  font-size: 14px;
+}
+
+.todo--app {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  width: 560px;
+  min-height: 600px;
+  margin: 4rem auto;
+  padding-bottom: 2rem;
+  background: var(--color-backgrnd);
+  color: var(--color-primary-txt);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.todo--heading {
+  text-transform: capitalize;
+}
+.todo--subheading {
+  color: rgb(168, 39, 248);
+  letter-spacing: 3px;
+  text-transform: capitalize;
+}
+
+.todo--form {
+  margin-bottom: 2rem;
+}
+
+.todo--input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 12px 0 0 12px;
+  outline: none;
+  border: 2px solid var(--color-border);
+  background: transparent;
+  width: 320px;
+  color: var(--color-primary-txt);
+}
+
+.todo--input.edit {
+    border: 2px solid #149fff;
+}
+
+.todo--input::placeholder {
+  color: #e2e2e2;
+}
+
+.todo--btn {
+  padding: 14px 32px 14px 16px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0 12px 12px 0;
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+  color: var(--color-primary-txt);
+  text-transform: capitalize;
+}
+
+.todo--btn.edit {
+    background: linear-gradient(90deg, rgba(20, 159, 255, 1) 0%,
+    rgba(17, 122, 255, 1) 100%);
+}
+
+/* .container {
+  display: flex;
+  align-items: center;
+  position: relative;
+} */
+
+.todo--row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem auto;
+  color: var(--color-primary-txt);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 118, 20, 1) 0%,
+    rgba(255, 84, 17, 1) 100%
+  );
+  padding: 0.8rem;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  /* width: 90%; */
+  cursor: pointer;
+}
+
+.todo--row:nth-child(4n + 1) {
+    background: linear-gradient(90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%);
+}
+
+.todo--row:nth-child(4n + 2) {
+    background: linear-gradient(90deg,
+    rgba(255, 12, 241, 1) 0%,
+    rgba(250, 0, 136, 1) 100%);
+}
+
+.todo--row:nth-child(4n + 3) {
+    background: linear-gradient(90deg,
+    rgba(20, 159, 255, 1) 0%,
+    rgba(17, 122, 255, 1) 100%);
+}
+
+.todo--row .icon {
+    display: flex;
+    align-items: center;
+}
+
+.todo--row .remove--icon {
+    margin-right: 7px;
+}

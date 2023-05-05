@@ -1,13 +1,16 @@
+import Todo from "./components/Todo"
+import "./App.css"
 
 
 function App() {
+// const [todoList, setTodoList] = useState([])
+    // console.log(todoList)
 
   return (
-    <>
-      <p>hello world </p>
-      <h1>Sit down</h1>
-    </>
-  )
+    <div className="todo--app">
+      <Todo />
+    </div>
+  );
 }
 
 export default App
