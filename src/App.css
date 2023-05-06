@@ -30,6 +30,10 @@ h6 {
   font-size: 1rem;
 }
 
+html {
+  min-height: 100%;
+}
+
 body {
   font-family: "Nunito Sans", "Lucida Sans", "Lucida Sans Regular",
     "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -42,7 +46,8 @@ body {
   display: flex;
   justify-content: center;
   /* align-items: center; */
-  width: 560px;
+  width: 100%;
+  max-width: 560px;
   min-height: 600px;
   margin: 4rem auto;
   padding-bottom: 2rem;
@@ -157,3 +162,17 @@ body {
 .todo--row .remove--icon {
     margin-right: 7px;
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+  .todo--input {
+  padding: 14px 20px 14px 16px;
+  width: 250px;
+/* display: flex; */
+}
+}
+  
